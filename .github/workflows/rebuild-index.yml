@@ -61,7 +61,7 @@ jobs:
       # verify/manifest/signature reads it does per package. Same
       # install pattern as release.yml's release job: Nix reading the
       # Logos cache (no tokens), then one `nix build` of the package flake.
-      - uses: logos-co/setup-nix-cache-action@781f072122f4df6af0e33a7d355ebd20283e019e # v1.2.0
+      - uses: gateway-fm/setup-nix-cache-action@e8827a7bd3f6aafa439bbbb7b6f37b66f568111a # v1.2.0 + pinned actions
       - name: Set up lgx CLI
         shell: bash
         run: |
